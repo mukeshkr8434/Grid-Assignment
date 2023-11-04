@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 250px);
+            gap: 20px;
+            padding: 20px;
+         }
+         .image1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+         }
+         .image2{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+         }
+         .image3{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+         }
+         .image4{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+         }
+         .image5{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+         }
+         .image6{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+         }
+         img{
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image1"><img src="/Grid Assignment/image/download1.jpeg" alt=""></div>
+        <div class="image2"><img src="/Grid Assignment/image/download2.jpeg" alt=""></div>
+        <div class="image3"><img src="/Grid Assignment/image/download3.png" alt=""></div>
+        <div class="image4"><img src="/Grid Assignment/image/images.jpeg" alt=""></div>
+        <div class="image5"><img src="/Grid Assignment/image/images1.jpeg" alt=""></div>
+        <div class="image6"><img src="/Grid Assignment/image/images2.jpeg" alt=""></div>
+    </div>   
+</body>
+</html>
